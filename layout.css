@@ -1,7 +1,7 @@
 /************ General ********************/
 html{
     margin: 2%;
-    background-color: rgb(233, 235, 235);
+    background-color: rgb(232, 223, 208);
 }
 
 h2{ 
@@ -18,7 +18,7 @@ img {
 
 /*************** Kategori ****************/
 .header h1 span{
-    color: rgb(255, 166, 2);
+    color: rgb(255, 145, 2);
     transform: scaleX(-1) translateX(-0.2rem);
     display: inline-block;
     cursor: pointer;
@@ -52,11 +52,16 @@ img {
     text-align: center;
     border-radius: 4%;
     font-size: 20px;
-    border-color: rgb(247, 205, 128);
-    border-style: solid;
+    box-shadow: 10px 5px rgba(223, 157, 34, 0.8);
     cursor: pointer;
 }
 
+/*** java ****/
+.hideshadow{
+   /*  box-shadow: none; */
+   box-shadow: 10px 5px rgba(223, 34, 110, 0.8)
+}
+/*******************/
 nav{
     display: flex;
     gap: 5%;

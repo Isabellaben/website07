@@ -1,0 +1,164 @@
+/************ General ********************/
+html{
+    margin: 2%;
+}
+
+h2{ 
+    color: 	#42352f;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 1%;
+    margin-top: 1em;
+    margin-bottom: 1em;} 
+
+/*************** Kategori ****************/
+.header h1 span{
+    color: rgb(225, 166, 56);
+    transform: scaleX(-1) translateX(-0.2rem);
+    display: inline-block;
+    cursor: pointer;
+}
+
+.header a{
+    text-decoration-color: #c0bfc0;
+    color: 	#3e322c;
+    }
+
+.header > a{
+    text-decoration: none;
+    font-size: 40px; 
+}
+
+.kategori{
+    background-color: rgb(233, 235, 235);
+}
+
+.kategoriliste {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3em;
+    margin: 6%;
+}
+
+.kategoriliste a{
+    text-decoration: none;
+    color: rgb(233, 235, 235);
+    background-color: 	#917465;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    text-align: center;
+    border-radius: 4%;
+    font-size: 20px;
+    border-color: rgb(247, 205, 128);
+    border-style: solid;
+    cursor: pointer;
+}
+
+nav{
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+}
+
+nav :hover{
+    color: black;
+    transform: scale(1.1);
+}
+
+/* web version */
+@media screen and (min-width: 600px){
+    nav{
+        display: flex;
+        gap: 10%;
+        margin-right: 5%
+    }
+    
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .kategoriliste {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3em;
+        margin: 6%;
+        
+    }
+}
+
+/**************** Produkt liste **************/
+.subtle{
+    color: #c0bfc0;
+}
+
+.price{
+    font-style: solid;
+}
+
+.produktliste{
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+
+/* web version */
+@media screen and (min-width: 600px){
+    .produktliste{
+        display: grid;
+        gap: 2em;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+/************ Produkt *************/
+
+.produkt{
+    justify-content: center;
+    display: grid;
+    width: 100%;
+}
+
+.buy{
+    background-color: #c0a89d;
+    padding: 2em;
+    border-color: rgb(247, 205, 128);
+    border-style: solid;
+}
+
+.buy button{
+    display: block;
+    width: 50%;
+   margin-top: 1em;
+   width: 100%;
+   padding: 2%;
+   cursor: pointer;
+}
+
+/* web version */
+@media screen and (min-width: 900px){
+   .buy{
+    order: 2;
+/*     transform: translate(10px, -80px); */
+   }
+
+   .info{
+    order: 0;
+   }
+
+   .indholdprodukt {
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+
+   }
+
+}

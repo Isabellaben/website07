@@ -6,6 +6,17 @@ html{
 
 h2{ 
     color: 	#42352f;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: 	#19110e;
+}
+
+h3{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
 }
 
 img {
@@ -14,7 +25,12 @@ img {
     height: auto;
     border-radius: 1%; 
     margin-top: 1em;
-    margin-bottom: 1em;} 
+    margin-bottom: 1em;
+} 
+
+p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
 /*************** Kategori ****************/
 .header h1 span{
@@ -22,6 +38,7 @@ img {
     transform: scaleX(-1) translateX(-0.2rem);
     display: inline-block;
     cursor: pointer;
+    
 }
 
 .header a{
@@ -32,6 +49,7 @@ img {
 .header > a{
     text-decoration: none;
     font-size: 40px; 
+    
 }
 
 .kategoriliste {
@@ -56,16 +74,11 @@ img {
     cursor: pointer;
 }
 
-/*** java ****/
-.hideshadow{
-   /*  box-shadow: none; */
-   box-shadow: 10px 5px rgba(223, 34, 110, 0.8)
-}
-/*******************/
 nav{
     display: flex;
     gap: 5%;
     justify-content: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 nav :hover{
@@ -98,11 +111,13 @@ nav :hover{
 
 /**************** Produkt liste **************/
 .subtle{
-    color: #c0bfc0;
+    color: #858482;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .price{
     font-style: solid;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .produktliste{
@@ -121,6 +136,23 @@ nav :hover{
     }
 }
 
+article{
+    border-style: solid;
+    border-color: rgb(247, 205, 128);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(212, 198, 172);
+}
+
+article a{
+    color: #040101;
+    font-size: 17px;
+}
+
+article a:hover{
+    color: rgb(76, 65, 42);
+}
 
 /************ Produkt *************/
 
@@ -135,6 +167,7 @@ nav :hover{
     padding: 2em;
     border-color: rgb(247, 205, 128);
     border-style: solid;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .buy button{
@@ -144,13 +177,34 @@ nav :hover{
    width: 100%;
    padding: 2%;
    cursor: pointer;
+   background-color: #fef8f6;
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 20px;
+}
+
+.buy button:hover{
+    background-color: #e6e5e3;
+}
+
+select{
+    background-color: rgb(255, 255, 255);
+}
+
+dl {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+dt{
+    font-size: 20px;
+    padding: 10px;
+    font-weight: 600;
 }
 
 /* web version */
 @media screen and (min-width: 900px){
    .buy{
     order: 2;
-/*     transform: translate(10px, -80px); */
+    margin-left: 60px;
    }
 
    .info{
@@ -160,6 +214,7 @@ nav :hover{
    .indholdprodukt {
     display: flex;
     grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
 
    }
 

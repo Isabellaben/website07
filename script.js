@@ -1,4 +1,4 @@
-
+/* 
 window.addEventListener("load", skygge);
 
 function skygge (){
@@ -12,4 +12,4 @@ function hideshadow(){
 
 function skyggeigen() {
     document.querySelector(".kategoriliste").classList.remove("hideshadow")
-}
+} */

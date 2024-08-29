@@ -138,11 +138,12 @@ nav :hover{
 
 article{
     border-style: solid;
-    border-color: rgb(247, 205, 128);
+    border-color: rgb(254, 197, 89);
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
-    background-color: rgb(212, 198, 172);
+    background-color: rgb(215, 197, 167);
+    border-radius: 10px;
 }
 
 article a{
@@ -198,6 +199,29 @@ dt{
     font-size: 20px;
     padding: 10px;
     font-weight: 600;
+}
+
+.breadcrumbs{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    font-size: 13px;
+    justify-content: left;
+    margin-left: -5%;
+    background-color: #dac9ab;
+    padding: 10px;
+    border-radius: 5px
+
+}
+
+.breadcrumbs a{
+    text-decoration: none;
+    color: black;
+}
+
+.breadcrumbs li + li::before{
+    content: ">";
+    margin-right: 10px;
 }
 
 /* web version */

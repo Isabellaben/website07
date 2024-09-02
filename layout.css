@@ -134,18 +134,20 @@ nav :hover{
 }
 
 #product_list{
-    display: grid;
+    display: flex;
     gap: 2em;
     grid-template-columns: repeat(1, 1fr);
 }
 
 #product_list a:hover{
     font-style: italic;
-
 }
 
-#product_list a{
+
+#product_list a:last-child{
+    margin-bottom: 0em;
     text-decoration: none;
+   flex-direction: column;
 }
 
 

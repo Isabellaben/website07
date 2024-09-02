@@ -32,6 +32,6 @@ function showProduct(product){
     const clone = productTemplate.cloneNode(true);
     clone.querySelector("h3").textContent = product.productdisplayname;
     clone.querySelector("p").textContent = product.price;
-    clone.querySelector("h4").textContent = product.brandname;
+
     productList.appendChild(clone);
 }

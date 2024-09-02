@@ -139,6 +139,15 @@ nav :hover{
     grid-template-columns: repeat(1, 1fr);
 }
 
+#product_list a:hover{
+    font-style: italic;
+
+}
+
+#product_list a{
+    text-decoration: none;
+}
+
 
 /* web version */
 @media screen and (min-width: 600px){

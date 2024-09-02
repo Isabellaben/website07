@@ -39,10 +39,11 @@ function showProduct(product){
     clone.querySelector("h5").textContent = product.season;
     clone.querySelector("h4").textContent = product.brandname + " || " + product.articletype;
     clone.querySelector("p").textContent = product.price + ",-";
-/* 
-    document.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${id}.webp`;
-    document.querySelector("img").alt = product.productdisplayname; */
-   /*  clone.document.querySelector("a").href = `produkt.html?id=${product.id}`; */
+
+    clone.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
+    clone.querySelector("img").alt = product.productdisplayname; 
+
+    clone.querySelector("a").href = `produkt.html?id=${product.id}`; 
 
     productList.appendChild(clone);
       

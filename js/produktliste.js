@@ -2,6 +2,7 @@ window.addEventListener("DOMContentLoaded", init);
 
 const productsURI = "https://kea-alt-del.dk/t7/api/products?limit=50";
 
+
 let productList;
 let productTemplate;
 
@@ -31,5 +32,6 @@ function showProduct(product){
     const clone = productTemplate.cloneNode(true);
     clone.querySelector("h3").textContent = product.productdisplayname;
     clone.querySelector("p").textContent = product.price;
+    clone.querySelector("h4").textContent = product.brandname;
     productList.appendChild(clone);
 }

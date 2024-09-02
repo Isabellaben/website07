@@ -19,6 +19,10 @@ h3{
     font-size: 15px;
 }
 
+h4{
+    color: black;
+}
+
 h5{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(88, 87, 87);
@@ -125,6 +129,8 @@ nav :hover{
 .price{
     font-style: solid;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    font-size: 18px;
 }
 
 #product_list{

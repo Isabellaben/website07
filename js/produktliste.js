@@ -1,35 +1,35 @@
-fetch ("https://kea-alt-del.dk/t7/api/products ")
-.then(res=>res.json())
-.then(showProducts);
+window.addEventListener("DOMContentLoaded", init);
+
+const productsURI = "https://kea-alt-del.dk/t7/api/products?limit=50";
+
+let productList;
+let productTemplate;
+
+function init (){
+    productList = document.querySelector("#product_list");
+    console.log("productList", productList);
+    
+    productTemplate = document.querySelector("template").content;
+    console.log("productTemplate", productTemplate);
 
 
-function showProducts(products){
-    //looper og kalder showProduct
-    products.forEach(showProducts);
+    fetch(productsURI)
+    .then((response) => {
+        console.log("response", response);
+        return response.json();
+    })
+    
+    .then(logJSON);
 }
 
-function showProduct(products){
-    console.log(product);
-    //fang template
-    const template = document.querySelector("#produktListeTemplate").textContent;
-    //lav en kopi
-    const copy = template.cloneNode(true); 
-    //ændre indhold
-    copy.querySelector("h3").textContent = product.productdisplayname;
-     //appende
-     document.querySelector("main").appendChild(copy);
+function logJSON(json){
+    console.log("json", json);
+    json.forEach(showProduct);
 }
 
-/*     <section class="produktliste">
-          <article>
-            <img
-              src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp"
-              alt="Sahara Team India Fanwear"
-            />
-            <h3>Sahara Team India Fanwear Round Neck Jersey</h3>
-            <p class="subtle">Tshirts | Nike</p>
-            <p class="price">DKK 1595,-</p>
-            <a href="produkt.html">Læs mere</a>
-          </article>
-            */
-
+function showProduct(product){
+    const clone = productTemplate.cloneNode(true);
+    clone.querySelector("h3").textContent = product.productdisplayname;
+    clone.querySelector("p").textContent = product.price;
+    productList.appendChild(clone);
+}

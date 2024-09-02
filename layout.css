@@ -120,7 +120,7 @@ nav :hover{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.produktliste{
+#product_list{
     display: grid;
     gap: 2em;
     grid-template-columns: repeat(1, 1fr);
@@ -129,7 +129,7 @@ nav :hover{
 
 /* web version */
 @media screen and (min-width: 600px){
-    .produktliste{
+    #product_list{
         display: grid;
         gap: 2em;
         grid-template-columns: repeat(4, 1fr);
@@ -181,6 +181,8 @@ article a:hover{
     padding: 10px;
     text-align: center;
 }
+
+
 
 /************ Produkt *************/
 

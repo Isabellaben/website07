@@ -30,6 +30,8 @@ function logJSON(json){
 function showProduct(product){
     const clone = productTemplate.cloneNode(true);
     clone.querySelector("h3").textContent = product.productdisplayname;
-    clone.querySelector("p").textContent = product.price;
+    clone.querySelector("h5").textContent = product.season;
+    clone.querySelector("h4").textContent = product.price + ",-";
+    clone.querySelector("p").textContent = product.brandname + " || " + product.articletype;
     productList.appendChild(clone);
 }

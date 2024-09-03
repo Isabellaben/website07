@@ -183,18 +183,31 @@ article a:hover{
 .onSale .price{
   color: rgb(64, 63, 63);
   text-decoration: line-through;
+  color: rgb(140, 104, 38);
 }
 
-.discount{
-    background-color: orange;
+.discounted{
     border-radius: 5%;
-    padding-left: 5%; 
+    padding: 5%; 
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 5%;
 }
 
+.discounted > p{
+    margin-bottom: 0;
+}
+
+.discounted p:last-child{
+    background-color: rgb(255, 166, 0, 0.7);
+    margin: 20px;
+}
 
 
 .soldOut{
-    background-color: rgba(58, 58, 58, 0.5);
+    background-color: rgba(97, 93, 93, 0.5);
+    opacity: 0.6;
 }
 
 .soldOut .price{

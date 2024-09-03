@@ -2,9 +2,6 @@ window.addEventListener("DOMContentLoaded", init);
 
 const productsURI = "https://kea-alt-del.dk/t7/api/products?limit=50";
 
-/* const id = 1551;
-const url = `https://kea-alt-del.dk/t7/api/products/${id}`; */
-
 let productList;
 let productTemplate;
 
@@ -37,14 +34,24 @@ function showProduct(product){
 
     clone.querySelector("h3").textContent = product.productdisplayname;
     clone.querySelector("h5").textContent = product.season;
+    clone.querySelector("h6").textContent = product.category;
     clone.querySelector("h4").textContent = product.brandname + " || " + product.articletype;
     clone.querySelector("p").textContent = product.price + ",-";
-    
-
     clone.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
     clone.querySelector("img").alt = product.productdisplayname; 
-
     clone.querySelector("a").href = `produkt.html?id=${product.id}`; 
+
+
+    if (product.soldout) {
+        clone.querySelector("article").classList.add("soldOut"); 
+    }
+
+    if (product.discount) {
+        clone.querySelector("article").classList.add("onSale"); 
+        clone.querySelector(".discounted p span").textContent = "Nu " + Math.round(product.price - (product.price * product.discount) / 100) + ",- ";
+        clone.querySelector(".discounted p+p span").textContent = product.discount + "%"; 
+    }
+
 
     productList.appendChild(clone);
       

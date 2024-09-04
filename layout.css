@@ -63,14 +63,21 @@ p{
     
 }
 
-.kategoriliste {
+
+/* .kategoriliste {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 3em;
     margin: 6%;
+    grid-template-columns: 1fr 1fr ;
 }
 
-.kategoriliste a{
+.kategoriliste ul{
+    gap: 3em;
+    list-style-type: none;
+    columns: 4;
+  
+} */
+
+/* .kategoriliste a{
     text-decoration: none;
     color: rgb(233, 235, 235);
     background-color: 	#725d52;
@@ -82,8 +89,8 @@ p{
     border-radius: 4%;
     font-size: 20px;
     box-shadow: 10px 5px rgba(223, 157, 34, 0.8);
-    cursor: pointer;
-}
+    cursor: pointer; 
+} */
 
 nav{
     display: flex;

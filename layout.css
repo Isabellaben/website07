@@ -63,24 +63,17 @@ p{
     
 }
 
-
-/* .kategoriliste {
-    display: grid;
-    margin: 6%;
-    grid-template-columns: 1fr 1fr ;
-}
-
 .kategoriliste ul{
-    gap: 3em;
     list-style-type: none;
-    columns: 4;
-  
-} */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+} 
 
-/* .kategoriliste a{
-    text-decoration: none;
-    color: rgb(233, 235, 235);
-    background-color: 	#725d52;
+.kategoriliste li{
+    display: grid;
+    margin: 1em;
+    border-style: solid;
+    border-color: #725d52;
     padding-left: 1em;
     padding-right: 1em;
     padding-top: 2em;
@@ -90,7 +83,17 @@ p{
     font-size: 20px;
     box-shadow: 10px 5px rgba(223, 157, 34, 0.8);
     cursor: pointer; 
-} */
+}
+
+.kategoriliste li:hover{
+    border-color: #ef980b;
+}
+
+.kategoriliste li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
 nav{
     display: flex;
@@ -118,13 +121,13 @@ nav :hover{
         justify-content: space-between;
     }
     
-    .kategoriliste {
+   /*  .kategoriliste {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr;
         gap: 3em;
         margin: 6%;
         
-    }
+    } */
 }
 
 /**************** Produkt liste **************/
